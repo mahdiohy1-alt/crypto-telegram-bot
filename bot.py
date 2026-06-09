@@ -1,3 +1,5 @@
+# سطر تعريف الـ app لكي لا يتوقف السيرفر المجاني
+app = lambda environ, start_response: start_response('200 OK', [('Content-Type', 'text/plain')]) or [b"Bot is Running!"]
 import ccxt
 import pandas as pd
 import ta
