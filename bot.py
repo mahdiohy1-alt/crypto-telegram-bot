@@ -63,6 +63,7 @@ def monitor(symbol, entry, tp1, tp2, sl):
 # ==================== 🚀 الحلقة الرئيسية 🚀 ====================
 print("📡 البوت جاهز ويعمل الآن...")
 while True:
+    send_telegram(GIF_NEW, "🚀 البوت يعمل الآن وتم ربطه بنجاح بتليجرام!")
     for symbol in WATCHLIST:
         try:
             df = get_data(symbol)
